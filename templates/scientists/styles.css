@@ -1,0 +1,27 @@
+.container{
+    width:100%;
+    height:100%;
+}
+.header , .search,.large_search, .map{
+    width:95%;
+    border: 4px double  mediumaquamarine ;
+    padding: 1%;
+    margin-right:2%;
+    margin-left: 2%;
+    border-radius:15px;
+}
+.registration,.enter, .text {
+    display:inline-block;
+}
+.search, .large_search{
+    width:25%;
+    padding: 3%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.map {
+    width:52%;
+    margin-left:35%;
+    margin-top: -31%;
+    padding:6%;
+}
