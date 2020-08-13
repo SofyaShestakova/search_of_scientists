@@ -23,3 +23,12 @@ function select(){
         };
     }
 }
+function showOrHideSearch(element1) {
+    let search = document.getElementById(element1);
+    let large_search = document.getElementById('large_search');
+    if (search.style.display !== 'block') {
+        search.style.display = 'block';
+    } else {
+        search.style.display = 'none';
+    }
+}

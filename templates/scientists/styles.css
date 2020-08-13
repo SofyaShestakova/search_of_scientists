@@ -9,7 +9,6 @@
     margin-right:2%;
     margin-left: 2%;
     border-radius:15px;
-    display:block;
 }
 .registration,.enter, .text, .table {
     display:inline-block;
@@ -22,7 +21,7 @@
 .map {
     width:64%;
     margin-left:35%;
-    margin-top: -45%;
+    margin-top: -32%;
     border: 6px double  mediumaquamarine ;
     border-radius:15px;
 }
