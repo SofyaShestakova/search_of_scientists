@@ -12,7 +12,9 @@ function select(){
     let district = document.getElementById("district");
     let region = document.querySelector("#region");
     window.onload = selectRegion;
-    district.onchange = selectRegion;
+    if(document.getElementById("large_search").style.display!="none"){
+        district.onchange = selectRegion;
+    }
 
     function selectRegion(ev){
         region.innerHTML = "";
@@ -25,10 +27,13 @@ function select(){
 }
 function showOrHideSearch(element1) {
     let search = document.getElementById(element1);
-    let large_search = document.getElementById('large_search');
+    let region = document.querySelector('#region');
     if (search.style.display !== 'block') {
         search.style.display = 'block';
     } else {
         search.style.display = 'none';
+    }
+    if(search.style.display = 'none'){
+        region.value="chn";
     }
 }
