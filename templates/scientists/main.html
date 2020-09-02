@@ -2,6 +2,7 @@
 <html lang="ru-Ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Главная страница</title>
     <link rel="stylesheet" href= "styles.css" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -16,7 +17,8 @@
         </nav>
         <a class="btn btn-outline-primary" href="#">Войти</a>
     </div>
-    <div class = "search">
+    <div class="row">
+    <div class = "col-md-3" id="search">
         <h4>Поиск</h4>
         <p>
             <b>Имя</b>
@@ -35,7 +37,7 @@
                 <option value="sbr">Сибирский</option>
                 <option value="dvs">Дальневосточный</option>
             </select>
-        <div id="large_search" style="display:none">
+        <div id="large_search" style="display:block">
         <p>
             <b>Регион</b>
             <select size="1" name="region" id="region">
@@ -53,31 +55,33 @@
         </p>
         <a class="btn btn-outline-primary" href="#">Поиск</a>
     </div>
-    <div class = "map">
+    <div class = "col-md-9" id="map">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5808f2adb93042877a0d3ecfc2f8d1b1e4611cfcaabef6167107f5918fe8b942&amp;width=100%&amp;height=446&amp;lang=ru_RU&amp;scroll=true">  </script>
     </div>
-    <div class = "news">
+</div>
+    <div class = "card-deck mb-4 text-center" id="news">
         <h4>Новости</h4>
-        <div class="table">
+        <p></p>
+        <div class="card mb-5 shadow-sm">
             <b>Дата</b><hr/>
             <b>Текст</b>
         </div>
-        <div class="table">
+        <div class="card mb-5 shadow-sm">
             <b>Дата</b><hr/>
             <b>Текст</b>
         </div>
-        <div class="table">
+        <div class="card mb-5 shadow-sm">
             <b>Дата</b><hr/>
             <b>Текст</b>
         </div>
     </div>
-    <div class="forum">
+    <div class="card-deck mb-4 text-center" id="forum">
         <b>Форум</b>
         <p> <b>ТЕМА ДНЯ!</b> </p>
         <div class="table" id="topics">
-            <tr><td>Тема 1<hr class="hr"/><td><tr>
-            <tr><td>Тема 2<hr/></td><tr>
-            <tr><td>Тема 3<hr/></td><tr>
+            <tr class="card mb-5 shadow-sm"><td>Тема 1<hr class="hr"/><td><tr>
+            <tr class="card mb-5 shadow-sm"><td>Тема 2<hr/></td><tr>
+            <tr class="card mb-5 shadow-sm"><td>Тема 3<hr/></td><tr>
         </div>
     </div>
 </div>
